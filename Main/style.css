@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 1rem;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    padding: 0.4rem;
+    color: white;
+}
+body{
+    font-family: "Merienda", cursive;
+    font-weight: 600;
+}
+#but_one i , #slide #but_two i{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    top: 30px;
+    cursor: pointer;
+    transition:all 0.3s linear;
+}
+#slide #but_two i{
+    top: 30px;
+    left: 250px;
+    opacity: 0;
+    color: gray;
+}
+#but_one i:hover , #but_two i:hover{
+    font-size: 28px;
+}
+#slide{
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    top: 0px;
+    background-color: black;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+    transition:all 0.3s linear;
+}
+
+#slide #logo{
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+}
+#slide #logo a{
+    position: absolute;
+    left: 80px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+#list{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    list-style: none;
+}
+#list i,a{
+    color: white;
+    padding: 20px 20px;
+}
+#list a{
+    text-decoration: none;
+}
+
+#social{
+    position: absolute;
+    top: 550px;
+}
+#social a i{
+    font-size: x-large;
+    opacity: 40%;
+}
+#sidebar{
+    display: none;
+}
+
+#slide #list li:hover{
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+#slide #social a i:hover{
+    opacity: 100%;
+    transform: scale(1.5);
+}
+
+#sidebar:checked ~ #slide{
+    left: -10px;
+}
+#sidebar:checked ~ #but_one i{
+    opacity: 0;
+}
+#sidebar:checked ~ #slide #but_two i{
+    opacity: 100;
+}
+.hover-a:hover{
+    color: green;
+}
+
+
+main #hero{
+    height: 34rem;
+    background-image: url('https://plus.unsplash.com/premium_photo-1663126325483-886b1a08ba8e?q=80&w=1357&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    color: whitesmoke;
+}
+.head2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 2.5rem;
+}
+.head3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 2.5rem;
+}
+.btn{
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 0.8rem;
+    margin: 5rem;
+    font-size: 20px;
+}
