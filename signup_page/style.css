@@ -31,10 +31,9 @@ body {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     overflow: hidden;
-    width: 800px;
+    width: 850px;
     max-width: 90%;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    padding: 20px;
     /* backdrop-filter: blur(10px); */
 }
 
@@ -54,13 +53,13 @@ body {
 
 .right-section {
     width: 60%;
-    padding: 30px;
+    padding: 1rem 30px 1rem 30px;
 }
 
 .profile-img {
     display: block;
-    margin: 0 auto 15px;
-    width: 120px;
+    margin: 0 auto 8px;
+    width: 100px;
     border-radius: 50%;
     border: 3px solid #2680eb;
 }
@@ -107,7 +106,7 @@ input {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .login-btn:hover {
