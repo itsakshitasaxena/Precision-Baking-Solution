@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- Defer ensures script loads after HTML -->
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video class="video-container" autoplay muted loop>
+        <source src="cloudBG.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Login Container -->
+    <div class="container">
+        <div class="left-section">
+            <img src="social-media-icons.png" alt="Connect with Social Media">
+        </div>
+        <div class="right-section">
+            <img src="profile-icon.png" alt="User Profile" class="profile-img">
+            <h2>WELCOME</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <a href="#" class="forgot-password" onclick="openForgotPasswordModal()">Forgot Password?</a>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+            <p>Don't have an account? <a href="../signup_page/signup.html">Signup</a></p>
+        </div>
+    </div>
+    
+    <!-- Forgot Password Modal -->
+    <div id="forgotPasswordModal" class="modal">
+        <h3>Reset Password</h3>
+        <input type="email" id="resetEmail" placeholder="Enter your email" required>
+        <button onclick="resetPassword()">Submit</button>
+        <button onclick="closeForgotPasswordModal()">Close</button>
+    </div>
+
+</body>
+</html>

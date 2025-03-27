@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -19,7 +18,7 @@
                 <label for="sidebar"><i class="fa-solid fa-bars"></i></label>
             </div>
             <div id="slide">
-                <div id="logo"><a href="/hi">Logo</a></div>
+                <div id="logo"><a href="/hi"><img class="setLogo" src="logo.png" alt="logo"></a></div>
                 <div id="but_two">
                     <label for="sidebar"><i class="fa-solid fa-xmark"></i></label>
                 </div>
@@ -27,7 +26,7 @@
                 <ul id="list">
                     <li>
                         <i class="fa-solid fa-image"></i>
-                        <a href="/hi">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-arrows-to-circle"></i>
@@ -35,11 +34,11 @@
                     </li>
                     <li>
                         <i class="fa-solid fa-photo-film"></i>
-                        <a href="/hi">Convertor</a>
+                        <a href="/hi">Converter</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-calendar-days"></i>
-                        <a href="/hi">Community</a>
+                        <a href="/hi">ChatBot</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-store"></i>
@@ -63,24 +62,67 @@
                     </ul>
                 </div>
             </div>
-            <div class="logo">logo</div>
+            <div class="logo"><img class="setLogo" src="logo.png" alt="logo"></div>
+            <div class="logo"><button style="background-color: black; color: white; font-size: larger; border: none;">Share Your Experience</button></div>
             <div>
-                <a href="#" class="hover-a">log-in</a>
-                <a href="#" class="hover-a">Sign-up</a>
+                <a href="../login_page/login.html" class="hover-a">Login</a>
+                <a href="../signup_page/signup.html" class="hover-a">SignUp</a>
             </div>
 
         </nav>
     </header>
     <main>
         <div id="hero">
-            <h2 class="head2">Bake with Precision, Every Time</h2>
+            <h2 class="head2">Bake with Precision Everytime</h2>
             <h3 class="head3">Convert recipes to precise gram measurements with our AI-powered tool</h3>
             <div class="choose head3">
                 <button class="btn">Get Started</button>
                 <button class="btn">Convert Your First Recipe</button>
             </div>
         </div>
+        <div id="cards">
+            <div class="card">
+                <div class="box">
+                    <img src="https://media.istockphoto.com/id/2194527454/photo/matar-paratha-is-a-delicious-indian-flatbread-stuffed-with-spiced-mashed-green-peas-cooked.jpg?s=612x612&w=0&k=20&c=zOk6fEPbA0hEYc6I5yVcC90EiD34bnQxLCHWLqzmL-o=" alt="">
+                </div>
+                <div class="box">
+                    <p>
+                        <p>Turn your passion for baking into perfection with our AI-powered tool. Convert recipes into precise gram measurements effortlessly and elevate your baking game.</p></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box" style="border: none; background-color: inherit;">
+                    <p>Discover the joy of baking with precision! Our AI-powered tool is designed to transform your favorite recipes into gram-perfect measurements, ensuring every bake is a masterpiece. From cookies to cakes, we’re here to make your culinary journey seamless and delightful.</p>
+                </div>
+                <div class="box">
+                    <img src="https://media.istockphoto.com/id/1489687534/photo/closeup-of-aloo-paratha-with-mango-pickle-indian-breakfast.jpg?s=612x612&w=0&k=20&c=CuLKbbI4kvIkVNJPsfQYBqI6AW1JT5cRKVeLxJ5tfPg=" alt="">
+                </div>
+            </div>
+        </div>
     </main>
+    <footer>
+        <div id="headd">
+            <h2><i class="fa-brands fa-spotify"></i>name</h2>
+        </div>
+        <div id="footerr">
+            <div class="foot">
+                <h5>COMPANY</h5>
+                <p>about</p>
+                <p>jobs</p>
+            </div>
+            <div class="foot">
+                <h5>USEFUL LINKS</h5>
+                <p>support</p>
+                <p>Recipe generator</p>
+                <p>free mobile app</p>
+            </div>
+            <div id="details">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
     <script src="app.js"></script>
 </body>
 

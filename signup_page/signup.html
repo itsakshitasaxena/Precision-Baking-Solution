@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- Ensures script loads after HTML -->
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video autoplay muted loop class="video-container">
+        <source src="../login_page/cloudBG.mp4" type="video/mp4">
+        Your browser does not support 3D Background.
+    </video>
+
+    <!-- Signup Container -->
+    <div class="container">
+        <div class="left-section">
+            <img src="../login_page/social-media-icons.png" alt="Connect with Social Media">
+        </div>
+        <div class="right-section">
+            <img src="../login_page/profile-icon.png" alt="User Profile" class="profile-img">
+            <h2>Create Account</h2>
+            <form id="signupForm" onsubmit="return handleSignup(event)">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Create a password" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" placeholder="Re-enter password" required>
+                </div>
+                <p class="password-warning"></p>
+                <button type="submit" class="login-btn">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="../login_page/login.html">Login</a></p>
+        </div>
+    </div>
+
+    <!-- Reset Password Modal -->
+    <div id="forgotPasswordModal" class="modal">
+        <h3>Reset Password</h3>
+        <input type="email" id="resetEmail" placeholder="Enter your email">
+        <button onclick="resetPassword()">Reset Password</button>
+        <button onclick="closeForgotPasswordModal()">Close</button>
+    </div>
+
+</body>
+</html>
