@@ -28,7 +28,7 @@ body{
     font-weight: 700;
     position: absolute;
     left: 16px;
-    top: 30px;
+    top: 23px;
     cursor: pointer;
     transition:all 0.3s linear;
 }
@@ -58,6 +58,11 @@ body{
     width: 100%;
     line-height: 60px;
     box-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+}
+.setLogo{
+    height: 60px;
+    width: 100px;
+    border-radius: 0.4em;
 }
 #slide #logo a{
     position: absolute;
@@ -143,4 +148,68 @@ main #hero{
     padding: 0.8rem;
     margin: 5rem;
     font-size: 20px;
+}
+
+
+
+/* card area */
+#cards{
+    background-color: beige;
+    padding: 2rem;
+}
+.card{
+    height: 380px;
+    display: flex;
+}
+.box{
+    width: 32rem;
+    aspect-ratio: 1;
+    margin: 20px;
+    padding: 10px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background: linear-gradient(rgb(236, 236, 185),white,rgb(239, 239, 196),white);
+}
+.box:hover{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.89);
+}
+img{
+    width: 460px;
+    border-radius: 1rem;
+    height: 300px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.89);
+}
+
+
+
+
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 4rem;
+}
+#footerr{
+    display: flex;
+    padding: 5rem;
+    justify-content: space-between;
+    font-size: 25px;
+    line-height: 2.5rem;
+}
+footer i{
+    padding: 5px;
+}
+footer #headd{
+    font-size: 25px;
+    line-height: 5rem;
+}
+footer h5{
+    color: rgba(255, 255, 255, 0.655);
 }
